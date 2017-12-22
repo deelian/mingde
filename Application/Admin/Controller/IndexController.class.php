@@ -8,6 +8,7 @@ class IndexController extends Controller
 
     function _initialize()
     {
+    	echo THINK_PATH;
         echo "string";
     }
 

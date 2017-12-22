@@ -9,7 +9,7 @@ use Think\Controller;
 class LoginController extends Controller
 {
 
-	public function Login()
+	public function login()
 	{
 		$this->display();
 	}

@@ -7,14 +7,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5shiv.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="/Public/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/Public/lib/respond.min.js"></script>
 <![endif]-->
-<link href="lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
-<link href="static/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo __ROOT__ ?>static/h-ui.admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="/Public/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="/Public/static/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/Public/static/h-ui.admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="/Public/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <title>404页面</title>
@@ -24,7 +24,7 @@
 	<p class="error-title"><i class="Hui-iconfont va-m" style="font-size:80px">&#xe688;</i>
 		<span class="va-m"> 404</span>
 	</p>
-	<p class="error-description">不好意思，您访问的页面不存在~</p>
+	<p class="error-description">不管你信或是不信麽这就是现实！</p>
 	<p class="error-info">您可以：
 		<a href="javascript:;" onclick="history.go(-1)" class="c-primary">&lt; 返回上一页</a>
 		<span class="ml-20">|</span>

@@ -10,9 +10,9 @@ use Admin\Controller\VerifyController;
 class LoginController extends Controller
 {
 
-	public function login()
+	public function index()
 	{
-		$this->display();
+		$this->display('login');
 	}
 
 	public function loginCheck()

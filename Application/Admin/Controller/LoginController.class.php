@@ -12,6 +12,12 @@ class LoginController extends Controller
 
 	public function index()
 	{
+		$info = array(
+			
+			'copyright' => C('SYS_COPYRIGHT'),
+			'powered'	=> C('SYS_POWEREDBY')
+			);
+		$this->assign('info', $info);
 		$this->display('login');
 	}
 

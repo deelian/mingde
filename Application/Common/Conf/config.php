@@ -30,5 +30,8 @@ return array(
 
 	'URL_ROUTER_ON'   		=>  true,
 	'URL_HTML_SUFFIX'       =>  'Power_by_deelian',  // URL伪静态后缀设置
-	'URL_MODEL'             =>  2,   
+	'URL_MODEL'             =>  2, 
+
+
+	'LOAD_EXT_CONFIG' 		=> 'SYS'  
 );

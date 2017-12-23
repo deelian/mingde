@@ -8,14 +8,14 @@ class IndexController extends Controller
 
     function _initialize()
     {
-    	echo THINK_PATH;
-        echo "string";
+
     }
 
     public function index()
     {
         echo U();
-        echo u('/asdf/asdf/fasdf/asdf');
+        echo '<br>';
+        echo u('asdf/asdf');
         $this->display();
     }
 }

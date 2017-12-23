@@ -24,7 +24,7 @@
 	<p class="error-title"><i class="Hui-iconfont va-m" style="font-size:80px">&#xe688;</i>
 		<span class="va-m"> 404</span>
 	</p>
-	<p class="error-description">不管你信或是不信麽这就是现实！</p>
+	<p class="error-description">不管你信或是不信…… 这就是现实！</p>
 	<p class="error-info">您可以：
 		<a href="javascript:;" onclick="history.go(-1)" class="c-primary">&lt; 返回上一页</a>
 		<span class="ml-20">|</span>

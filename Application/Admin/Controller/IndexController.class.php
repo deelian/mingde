@@ -11,11 +11,15 @@ class IndexController extends Controller
 
     }
 
-    public function index()
+    public function welcome()
     {
-        echo U();
-        echo '<br>';
-        echo u('asdf/asdf');
         $this->display();
     }
+
+    public function index()
+    {
+        $this->display();
+    }
+
+
 }

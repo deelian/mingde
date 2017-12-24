@@ -23,6 +23,7 @@ class LoginController extends Controller
 
 	public function loginCheck()
 	{
+
 		if (IS_AJAX) {
 //			 $this->ajaxReturn(I());
 			// echo "string";
@@ -40,6 +41,8 @@ class LoginController extends Controller
 				]);
 			}
 
+		} else {
+			$this->display();
 		}
 	}
 

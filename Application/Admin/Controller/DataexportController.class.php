@@ -2,21 +2,24 @@
 namespace Admin\Controller;
 
 use Think\Controller;
+use Admin\Controller\PhpExcelController as PHPExcel;
 
 
 /**
 * 数据导出操作
 */
-class DataexportController extends Controller
+class DataexportController extends PHPExcel
 {
 	
-	function __initlilize(){
-		
+	function __initlilize()
+	{
+
 	}
 
 	public function export($value='')
 	{
-		echo "string";
+		$objPHPExcel	= $this->getObj();
+		p($objPHPExcel);
 	}
 }
 

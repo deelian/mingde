@@ -24,14 +24,15 @@ class IndexController extends Controller
     public function getUserInfo(){
         $user   = M('user');
         $res    = $user->where('user_id <99')->select();
-        p($res);
+//        p($res);
+        p($this->dataExport($res));
     }
 
-    public function dataExport()
+    public function dataExport($data)
     {
-        Vendor('Excel.PHPExcel');
-        $objPHPExcel   = new \PHPExcel();
-        p($objPHPExcel);
+
+//        p($objPHPExcel);
+        return $objPHPExcel->createSheet($data);
 //        p($objExcel);
 //        $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI','AJ','AK','AL','AM','AN','AO','AP','AQ','AR','AS','AT','AU','AV','AW','AX','AY','AZ');
 //

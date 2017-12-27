@@ -1,4 +1,4 @@
 .idea
-#Application/Common/Conf
+Application/Common/Conf/DB.php
 Application/Runtime/Cache/*
 Application/Runtime/Logs/*

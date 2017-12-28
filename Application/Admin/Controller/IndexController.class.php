@@ -23,9 +23,9 @@ class IndexController extends Controller
 
     public function getUserInfo(){
         $user   = M('user');
-        $res    = $user->where('user_id <99')->select();
-//        p($res);
-        p($this->dataExport($res));
+        $res    = $user->where('user_id < 9000')->select();
+        p($res);
+//        p($this->dataExport($res));
     }
 
     public function dataExport($data)

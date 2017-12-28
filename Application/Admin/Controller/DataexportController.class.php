@@ -8,18 +8,19 @@ use Admin\Controller\PhpExcelController as PHPExcel;
 /**
 * 数据导出操作
 */
-class DataexportController extends PHPExcel
+class DataexportController extends Controller
 {
-	
-	function __initlilize()
-	{
+	protected $objPHPExcel;
 
+	function _initialize()
+	{
+		Vendor('Excel.PHPExcel');
+		$this->objPHPExcel = new \PHPExcel();
 	}
 
 	public function export($value='')
 	{
-		$objPHPExcel	= $this->getObj();
-		p($objPHPExcel);
+		p($this->objPHPExcel);
 	}
 }
 

@@ -23,7 +23,7 @@ class IndexController extends Controller
 
     public function getUserInfo(){
         $user   = M('user');
-        $res    = $user->where('user_id < 100')->getField('user_id,name,real_name,sex,mobile');
+        $res    = $user->where('user_id <= 2 ')->getField('user_id,name,real_name,sex,mobile');
         foreach($res as $resK => $resV){
             switch ($resV['sex']) {
                 case '0':
@@ -39,13 +39,13 @@ class IndexController extends Controller
                     break;
             }
         }
-//        p($res,1 );
+        p('action!');
         $headArr    = ['编号', '昵称','真实姓名', '性别', '手机号'];
 
-        $filename="goods_list";
+        $filename="userInfo";
 
         $this->getExcel($filename,$headArr,$res);
-        p($headArr);
+//        p($headArr);
     }
 
     private  function getExcel($fileName,$headArr,$data){
@@ -57,7 +57,8 @@ class IndexController extends Controller
 //        import("Org.Util.PHPExcel.IOFactory.php");
         Vendor('Excel.PHPExcel.IOFactory');
 
-        $date = date("Y_m_d",time());
+//        $date = date("Y_m_d",time());
+        $date = time();
         $fileName .= "_{$date}.xls";
 
         //创建PHPExcel对象，注意，不能少了\
@@ -65,7 +66,7 @@ class IndexController extends Controller
         $objProps = $objPHPExcel->getProperties();
 
         //设置表头
-        $key = ord("A");
+        $key = ord("C");
         //print_r($headArr);exit;
         foreach($headArr as $v){
             $colum = chr($key);

@@ -7,6 +7,6 @@ class IndexController extends Controller
 {
     public function index()
     {
-        echo APP_NAME;
+        echo APP_NAME.'onLine';
     }
 }
